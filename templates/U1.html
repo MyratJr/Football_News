@@ -1,0 +1,92 @@
+<style>
+    body {
+        background: #eee
+    }
+    
+    .news {
+        width: 260px;
+        border-radius:0px 10px 10px 0px; 
+        display:flex;
+        position: relative;
+        overflow: hidden;
+    }
+    .white
+    {
+        height:40px;
+        overflow:hidden;
+    }
+    
+    .scroll{
+        display: flex;
+        flex-wrap: wrap;
+        margin:0;
+        padding: 0;
+        z-index: 999;
+        animation:vertical-up 5s ease-in-out infinite;
+    }
+    .scroll li
+    {
+        list-style: none;
+        display: flex;
+        width: 100%;
+        line-height: 34px;
+        align-items: center;
+        padding-left: 25px;
+    }
+    
+    .scroll li a {
+        text-decoration: none;
+        color:#323232;
+        font-weight:700;
+        
+    }
+    .scroll a:hover
+     {
+        color:#0d6efd;
+    }
+    
+    .scroll:hover{animation-play-state: paused; }
+    .dot {
+        height: 7px;
+        width: 7px;
+        margin-left: 3px;
+        margin-right: 3px;
+        background-color: rgb(207, 23, 23);
+        border-radius: 50%;
+        display: inline-block;
+    }
+    
+    @keyframes vertical-up 
+    {
+        0%   {margin-top: 0;}
+        35%  {margin-top: -30px;}
+        70%  {margin-top: -60px;}
+        100% {margin-top: 0;}
+        
+    }
+    </style>
+<div class="container-fluid py-5">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="d-flex justify-content-between bg-white white">
+    <div class="d-flex justify-content-center bg-primary py-2 text-white px-1 news">
+    <span class="d-flex align-items-center">News Update:</span>
+    </div>
+    <ul class="scroll" >
+    <li>
+    <span class="dot"></span> 
+    <a href="#">Hardik Pandya bowls at high speed in 1st match as Gujarat Titans captian</a> 
+    </li>
+    <li>
+    <span class="dot"></span> 
+    <a href="#">Will Smith-Chris Rock’s punch drama aside, why Oscars 2022 made Twitter cringe </a> 
+    </li>
+    <li>
+    <span class="dot"></span> 
+    <a href="#">Sensex rises 230 points, Nifty up at 17,222 | List of top gainers</a> 
+    </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>  
